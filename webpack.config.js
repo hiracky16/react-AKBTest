@@ -1,7 +1,8 @@
-const path = require('path')
+const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
-	entry: "./src/js/entry.js",
+	entry: "./src/js/entry.jsx",
 	output: {
 		path: __dirname+'/docs',
 		filename: 'bundle.js'
@@ -9,12 +10,12 @@ module.exports = {
 	module: {
 		loaders: [
 			{
-				test: /\.js$/,
+				test: /.js[x]$/,
 				loader: 'babel-loader',
 				exclude: /node_modules/,
 				query: 
 					{
-						presets: ['es2015']
+						presets: ['react', 'es2015']
 					}	
 			}
 		]
