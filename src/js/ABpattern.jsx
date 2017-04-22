@@ -22,7 +22,7 @@ const imgB = {
 export default class ABpattern extends Component {
 	render () {
 		return (
-			<div className="div-ABpattern">
+			<div className="patterns">
 				<Pattern img={ imgA } />
 				<Pattern img={ imgB } />
 			</div>	

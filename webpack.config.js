@@ -18,6 +18,10 @@ module.exports = {
 						presets: ['react', 'es2015']
 					}	
 			},
+      {
+        test: /\.css$/,
+        loaders: ['style-loader', 'css-loader']
+      },
 			{
 				test: /\.(jpg|png)$/,
 				loaders: 'url-loader'

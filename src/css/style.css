@@ -1,0 +1,15 @@
+.image{
+  float: left;
+}
+
+img:hover{
+  outline: 3px solid #f00;
+}
+
+.patterns{
+  overflow: hidden;
+}
+
+.title {
+  background-color: #f00;
+}
