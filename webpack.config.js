@@ -2,11 +2,15 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-	entry: "./src/js/entry.jsx",
+	entry: {
+    "main": "./src/js/entry.jsx",
+    "index" : "./src/js/index.jsx",
+  },
 	output: {
 		path: __dirname+'/docs',
-		filename: 'bundle.js'
+		filename: '[name].bundle.js'
 	},
+  devtool: 'inline-source-map',
 	module: {
 		loaders: [
 			{
