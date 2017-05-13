@@ -11,9 +11,6 @@ render(
 	<div id="main">
 		<Title name="React"/>
 		<Patterns />
-    <Dropzone>
-      <div>Drag and Drop files at Here!</div>
-    </Dropzone>
 	</div>,
 	document.getElementById('root')
 );

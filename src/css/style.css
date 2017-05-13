@@ -1,15 +1,33 @@
-.image{
-  float: left;
+#main {
+  width: 100%;
 }
 
-img:hover{
+#main div{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.image{
+  margin: 5px;
+  padding: 5px;
+}
+
+/*
+#imageA:hover{
   outline: 3px solid #f00;
 }
 
+#imageB:hover{
+  outline: 3px solid #00f;
+}
+*/
+
 .patterns{
   overflow: hidden;
+  display: flex;
 }
 
 .title {
+  width: 80%;
   background-color: #f00;
 }

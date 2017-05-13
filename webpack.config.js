@@ -15,20 +15,20 @@ module.exports = {
 		loaders: [
 			{
 				test: /.js[x]$/,
-				loader: 'babel-loader',
+				loader: ['babel-loader'],
 				exclude: /node_modules/,
 				query: 
 					{
-						presets: ['react', 'es2015']
+						presets: ['es2015', 'react']
 					}	
 			},
       {
         test: /\.css$/,
-        loaders: ['style-loader', 'css-loader']
+        loader: ['style-loader', 'css-loader']
       },
 			{
 				test: /\.(jpg|png)$/,
-				loaders: 'url-loader'
+				loader: ['url-loader']
 			}
 		]
 	}
